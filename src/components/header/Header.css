@@ -17,10 +17,36 @@ body {
 .header {
   position: relative;
   z-index: 20;
+  margin-right: auto;
+  margin-left: auto;
+  padding: .625rem 2.625rem;
+  padding bottom: 10px;
+  text-align: center;
+}
+
+.header .columns {
+  position: relative;
+  float: left;
 }
 
 .header ul {
-  list-style: none
+  list-style: none;
+  line-height: 1.6;
+  display: block;
+}
+
+.header ul.menu-secondary {
+  top: 15px;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 1.4s;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 1.875rem;
 }
 
 .header ul li > a {
@@ -36,4 +62,10 @@ body {
   text-decoration: none;
   color: var(--active-color);
   font-weight: 700;
+}
+
+.header .logo-panel {
+  top: 0px;
+  display: inline-block;
+  width: 7.9375px;
 }

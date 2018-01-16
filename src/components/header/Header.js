@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <section className="outer-header">
         <header className="header row">
-          <div className="col-sm-12">
+          <div className="columns col-sm-12">
             <div className="secondary-menu-container">
               <ul className="menu-secondary">
                 <li>
@@ -21,7 +21,7 @@ class Header extends Component {
                 </li>
               </ul>
             </div>
-            <a href="#">
+            <a className="logo-panel" href="#">
               <img src={Logo} alt="Prati's Eyebrow Threading"/>
             </a>
             <ul className="utilities">
