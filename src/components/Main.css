@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,500,600,700,800|Quicksand:400,500,700');
 
 :root {
   --main-color: #F69C6F;
   --text-color: #18170B;
+  --bg-color: white;
 }
 
 body {

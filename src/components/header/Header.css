@@ -1,0 +1,39 @@
+:root {
+  --inactive-color: #8F8F9A;
+  --active-color: var(--main-color);
+}
+
+body {
+  background-color: var(--main-color);}
+
+.outer-header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--bg-color);
+  top: 0;
+  z-index: 100;
+}
+
+.header {
+  position: relative;
+  z-index: 20;
+}
+
+.header ul {
+  list-style: none
+}
+
+.header ul li > a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--inactive-color);
+}
+
+.header ul li > a:hover,
+.header ul li > a:focus,
+.header ul li > a:active {
+  text-decoration: none;
+  color: var(--active-color);
+  font-weight: 700;
+}
