@@ -4,77 +4,79 @@
 }
 
 body {
-  background-color: var(--main-color);}
+  background-color: var(--main-color);
+}
 
-.outer-header {
-  position: fixed;
-  width: 100%;
+#header {
   background-color: var(--bg-color);
-  top: 0;
-  z-index: 100;
 }
 
-.header {
-  position: relative;
-  z-index: 20;
-  margin-right: auto;
-  margin-left: auto;
-  padding: .625rem 2.625rem;
-  padding bottom: 10px;
-  text-align: center;
+#inner-header {
+    display: flex;
+    padding: 0.5em;
 }
 
-.header .columns {
-  position: relative;
-  float: left;
+#inner-header>* {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.header ul {
-  list-style: none;
+
+
+#-inner-header > span {
   line-height: 1.6;
-  display: block;
-}
-
-.header ul.menu-secondary {
-  top: 15px;
-  position: absolute;
-  left: 0;
-  margin: 0;
   opacity: 1;
   transition: opacity 250ms ease-in-out 1.4s;
 }
 
-.header ul li {
-    display: inline-block;
-    margin-right: 1.875rem;
-}
-
-.header ul li > a {
+#inner-header span a {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1em;
   color: var(--inactive-color);
 }
 
-.header ul li > a:hover,
-.header ul li > a:focus,
-.header ul li > a:active {
+#inner-header span a:hover,
+#inner-header span a:visited,
+#inner-header span a:focus {
   text-decoration: none;
   color: var(--active-color);
-  font-weight: 700;
 }
 
-.header .logo-panel {
-  top: 0;
-  display: inline-block;
-  width: 7.9375px;
-  position: relative;
+#inner-header #yelp-link {
+  background-color: var(--text-color);
+  width: 2.3em;
+  height: 2.3em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
 }
 
-.header .utilities {
-  position: absolute;
-  top: .9375rem;
-  right: 0;
-  display: block;
-  margin: 0;
+#inner-header #yelp-link > a {
+    color: var(--bg-color);
+    font-size: 1.5em;
+}
+
+#inner-header .right-menu-mobile {
+  display: none;
+}
+
+@media print, screen and (max-width: 40em) {
+  #inner-header .right-menu-mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #inner-header #logo {
+    justify-content: flex-start;
+  }
+
+  #inner-header .right-menu,
+  #inner-header .left-menu {
+    display: none;
+  }
 }
