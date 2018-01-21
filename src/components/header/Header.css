@@ -5,6 +5,12 @@
 
 #header {
   background-color: var(--bg-color);
+  box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 #inner-header {

@@ -2,20 +2,21 @@
   --overlay-color: rgba(35, 31, 32, 0.35);
 }
 
-#hero h1 {
+.hero-text h1 {
+  color: var(--bg-color);
   font-weight: 900;
   font-size: calc(16px + 3vw);
   margin: auto 30px;
+  line-height: 1.2em;
 }
 
-#hero h1,
-#hero p {
-    color: var(--bg-color);
+.hero-text > span {
+  margin-top: 5em;
 }
 
 .hero-overlay {
   background-color: var(--overlay-color);
-  height: 72vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -28,7 +29,7 @@
 .hero-image {
     background-image: url("./assets/hero-image.png");
     background-position: center;
-    height: 72vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -48,4 +49,5 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  width: 60%;
 }

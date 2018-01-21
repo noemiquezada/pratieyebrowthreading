@@ -5,7 +5,7 @@ import Logo from "../../assets/logo.svg";
 class Header extends Component {
   render() {
     return (
-      <div id="header" className="row">
+      <div id="header" className="">
         <div className="col-sm-10 col-sm-offset-1">
           <div id="inner-header">
             <span className="left-menu">
