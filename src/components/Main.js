@@ -6,6 +6,7 @@ import Panel from "./panels/Panel.js";
 
 import Services from "./panels/panel-content/services/Services.js";
 import Process from "./panels/panel-content/threading-process/Process.js";
+import CallToAction from "./panels/panel-content/call-to-action/CTA.js";
 
 class Main extends Component {
   render() {
@@ -14,7 +15,8 @@ class Main extends Component {
         <Header/>
         <Hero/>
         <Panel heading="Services" subheading="What we offer?" content={<Services/>}/>
-      <Panel heading="Threading Process" subheading="A glance at our eyebrow threading process focused on ultimate care and results. " content={<Process/>}/>
+        <CallToAction />
+        <Panel heading="Threading Process" subheading="A glance at our eyebrow threading process focused on ultimate care and results. " content={<Process/>}/>
       </div>
     );
   }

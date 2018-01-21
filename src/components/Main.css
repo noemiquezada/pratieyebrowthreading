@@ -2,7 +2,8 @@
 
 :root {
   --main-color: #F69C6F;
-  --text-color: #18170B;
+  /* --text-color: #18170B; */
+  --text-color: #19120B;
   --bg-color: white;
 }
 
