@@ -1,0 +1,15 @@
+.inner-panel-content h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+
+.inner-panel-content {
+  text-align: center;
+  height: 20em;
+  min-height: 20em;
+}
+
+.inner-panel-content > div {
+    padding: 3em 1em 1em;
+}
