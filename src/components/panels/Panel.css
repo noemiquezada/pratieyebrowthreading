@@ -1,0 +1,12 @@
+.panel h2 {
+  font-weight: 900;
+  font-size: calc(16px + 1vw);;
+}
+
+.panel h3 {
+  font-size: 1.375rem;
+}
+
+.panel-header {
+  text-align: center;
+}
