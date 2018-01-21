@@ -5,7 +5,7 @@ class Panel extends Component {
   render() {
     return(
       <div className="panel row">
-        <div className="col-md-12">
+        <div className="col-sm-10 col-sm-offset-1">
           <div className="content">
             <div className="panel-header">
               <h2>{this.props.heading}</h2>
