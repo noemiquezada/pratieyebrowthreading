@@ -7,17 +7,17 @@
           justify-content: space-between;
 }
 
-.flex-grid-fourths .col {
+/* .flex-grid-fourths .col {
   width: 24%;
-}
+} */
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .flex-grid,
   .flex-grid-fourths {
     display: block;
   }
   .flex-grid-fourths .col {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
   }
 }
