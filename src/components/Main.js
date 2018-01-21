@@ -6,6 +6,7 @@ import Panel from "./panels/Panel.js";
 
 import Services from "./panels/panel-content/services/Services.js";
 import Process from "./panels/panel-content/threading-process/Process.js";
+import Prices from "./panels/panel-content/prices/Prices.js";
 import CallToAction from "./panels/panel-content/call-to-action/CTA.js";
 import Statement from "./panels/panel-content/statement/Statement.js";
 
@@ -16,6 +17,7 @@ class Main extends Component {
         <Header/>
         <Hero/>
         <Panel heading="Services" subheading="What we offer?" content={<Services/>}/>
+        <Panel heading="Prices" subheading="Browse our best deals." content={<Prices />}/>
         <CallToAction />
         <Panel heading="Threading Process" subheading="A glance at our eyebrow threading process focused on ultimate care and results. " content={<Process/>}/>
         <Statement />
