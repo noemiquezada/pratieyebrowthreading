@@ -4,12 +4,10 @@ import './ServicePanel.css';
 class ServicePanel extends Component {
   render() {
     return(
-      <div className="inner-panel-content service-content">
-        <div>
+      <div className="content service-content">
           <span className={"icon " + this.props.icon}></span>
           <h4>{this.props.heading}</h4>
           <p>{this.props.content}</p>
-        </div>
       </div>
     );
   }

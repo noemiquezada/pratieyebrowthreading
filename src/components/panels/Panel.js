@@ -6,7 +6,7 @@ class Panel extends Component {
     return(
       <div className="panel row">
         <div className="col-sm-10 col-sm-offset-1">
-          <div className="content">
+          <div className="main-content">
             <div className="panel-header">
               <h2>{this.props.heading}</h2>
               <h3>{this.props.subheading}</h3>

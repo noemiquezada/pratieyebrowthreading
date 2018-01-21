@@ -5,22 +5,22 @@ import Panel from './service-panel/ServicePanel';
 class Services extends Component {
   render() {
     return(
-      <div className="row">
-        <div className="inner-panel col-sm-4">
+      <div className="flex-grid-thirds">
+        <div className="col">
           <Panel
             icon="icon-shape"
             heading="Threading"
             content="An ancient hair-removal technique utilizing a cotton thread that allows for well-defined edges that frame the eye."
           />
         </div>
-        <div className="inner-panel col-sm-4">
+        <div className="col">
           <Panel
             icon="icon-waxing"
             heading="Waxing"
             content="Waxing removes the entire hair shaft, growing back naturally without the stubbly look of shaving."
           />
         </div>
-        <div className="inner-panel col-sm-4">
+        <div className="col">
           <Panel
             icon="icon-facial"
             heading="Facials"

@@ -1,0 +1,23 @@
+.flex-grid-fourths {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-grid-fourths .col {
+  width: 24%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-fourths {
+    display: block;
+  }
+  .flex-grid-fourths .col {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
