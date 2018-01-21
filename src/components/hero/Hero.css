@@ -5,7 +5,8 @@
 .hero-text h1 {
   color: var(--bg-color);
   font-weight: 900;
-  font-size: calc(16px + 3vw);
+  /* font-size: calc(16px + 3vw); */
+  font-size: 4em;
   margin: auto 30px;
   line-height: 1.2em;
 }
