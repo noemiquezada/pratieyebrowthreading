@@ -3,10 +3,6 @@
   --active-color: var(--main-color);
 }
 
-body {
-  background-color: var(--main-color);
-}
-
 #header {
   background-color: var(--bg-color);
 }
