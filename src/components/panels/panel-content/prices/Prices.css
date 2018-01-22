@@ -1,0 +1,78 @@
+.filter {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.filter > li {
+  width: 24%;
+  text-align: center;
+  margin: 0 1em 0;
+  padding: 0.5em 0;
+}
+
+.filter > li{
+    display: inline-block;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.grid .price-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid .price-grid .element {
+  -webkit-box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.11);
+  -moz-box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.11);
+  box-shadow: 0px 2px 20px 2px rgba(0,0,0,0.11);
+}
+
+.grid .price-grid .element span {
+  display: block;
+}
+
+.element {
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center; */
+  height: auto;
+  padding: 2em 0;
+  float: left;
+  margin: 2em;
+}
+
+.gutter-sizer {
+  width: 4%;
+}
+
+.grid-sizer, .grid-item {
+  width: 22%;
+}
+
+.element .service {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 1.0em;
+}
+
+.element .category {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: 'Playfair Display';
+  text-transform: capitalize;
+  line-height: 2em;
+}
+
+.element .price {
+  font-size: 2.5em;
+}
