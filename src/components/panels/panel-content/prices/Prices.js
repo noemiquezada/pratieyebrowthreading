@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Prices.css';
 
 var children = [
-    {category: 'threading', service: 'eyebrow', cost: 8},
+    {category: 'threading', service: 'eyebrows', cost: 8},
     {category: 'threading', service: 'lip', cost: 4},
     {category: 'threading', service: 'chin', cost: 5},
     {category: 'threading', service: 'side', cost: 6},
@@ -12,15 +12,15 @@ var children = [
     {category: 'waxing', service: 'half arms', cost: 10},
     {category: 'waxing', service: 'full arms', cost: 30},
     {category: 'waxing', service: 'breast/belly', cost: 10},
-    {category: 'facial', service: 'european facial', cost: 50},
-    {category: 'facial', service: 'mini facial', cost: 25},
+    {category: 'facials', service: 'european facial', cost: 50},
+    {category: 'facials', service: 'mini facial', cost: 25},
 ]
 
 class Prices extends Component {
   constructor(props) {
     super(props);
 
-    // this.handleOnCategoryClick = this.handleOnCategoryClick.bind(this);
+    this.handleOnCategoryClick = this.handleOnCategoryClick.bind(this);
     this.elements = [];
 
     this.state = {
@@ -34,11 +34,21 @@ class Prices extends Component {
     } else {
       this.setState({elements: children});
     }
-    var elem = document.querySelector('.grid');
   }
 
   handleOnCategoryClick(e) {
-
+    var categoryElement = e.target;
+    if (categoryElement) {
+      var category = categoryElement.getAttribute('data-category');
+      if (category === 'all') {
+        this.setState({elements: children});
+      } else {
+        var filtered = children.filter(function(item) {
+          return item.category === category
+        });
+        this.setState({elements: filtered});
+      }
+    }
   }
 
   render() {
@@ -55,10 +65,10 @@ class Prices extends Component {
     return(
       <div className="prices">
           <ul className="filter">
-            <li>All</li>
-            <li>Threading</li>
-            <li>Waxing</li>
-            <li>Facials</li>
+            <li data-category="all" onClick={this.handleOnCategoryClick}>All</li>
+            <li data-category="threading" onClick={this.handleOnCategoryClick}>Threading</li>
+            <li data-category="waxing" onClick={this.handleOnCategoryClick}>Waxing</li>
+            <li data-category="facials" onClick={this.handleOnCategoryClick}>Facials</li>
           </ul>
         <div className="grid">
           {childElements}

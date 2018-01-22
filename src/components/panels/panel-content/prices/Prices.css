@@ -13,13 +13,20 @@
   text-align: center;
   margin: 0 1em 0;
   padding: 0.5em 0;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border: 2px var(--main-color) solid;
+  color: var(--main-color);
+  cursor: pointer;
 }
 
-.filter > li{
-    display: inline-block;
+
+.filter > li:focus,
+.filter > li:hover,
+.filter > li.active{
     color: var(--bg-color);
     background-color: var(--main-color);
-    text-transform: uppercase;
 }
 
 .grid {
@@ -70,4 +77,19 @@
 
 .grid-item .price {
   font-size: 2.5em;
+}
+
+@media (min-width:400px) and (max-width: 768px) {
+  .grid-item {
+    width: 31%;
+    padding: 1em;
+
+  }
+}
+
+@media (max-width:400px) {
+  .grid-item {
+    width: 48%;
+    padding: 1em;
+  }
 }
