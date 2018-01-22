@@ -45,8 +45,10 @@ class Prices extends Component {
       } else {
         var filtered = children.filter(function(item) {
           return item.category === category
+          this.setState({category: category})
         });
-        this.setState({elements: filtered});
+
+        this.setState({category: category, elements: filtered});
       }
     }
   }
@@ -65,10 +67,10 @@ class Prices extends Component {
     return(
       <div className="prices">
           <ul className="filter">
-            <li data-category="all" onClick={this.handleOnCategoryClick}>All</li>
-            <li data-category="threading" onClick={this.handleOnCategoryClick}>Threading</li>
-            <li data-category="waxing" onClick={this.handleOnCategoryClick}>Waxing</li>
-            <li data-category="facials" onClick={this.handleOnCategoryClick}>Facials</li>
+            <li data-category="all" className={this.state.category === 'all' ? 'active' : ''}  onClick={this.handleOnCategoryClick}>All</li>
+            <li data-category="threading" className={this.state.category === 'threading' ? 'active' : ''} onClick={this.handleOnCategoryClick}>Threading</li>
+            <li data-category="waxing" className={this.state.category === 'waxing' ? 'active' : ''} onClick={this.handleOnCategoryClick}>Waxing</li>
+            <li data-category="facials" className={this.state.category === 'facials' ? 'active' : ''} onClick={this.handleOnCategoryClick}>Facials</li>
           </ul>
         <div className="grid">
           {childElements}
