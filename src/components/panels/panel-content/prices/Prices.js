@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './Prices.css';
 
 var children = [
@@ -45,24 +46,13 @@ class Prices extends Component {
       } else {
         var filtered = children.filter(function(item) {
           return item.category === category
-          this.setState({category: category})
         });
-
+        this.setState({category: category});
         this.setState({category: category, elements: filtered});
       }
     }
   }
-
   render() {
-    var childElements = this.state.elements.map(function(element, key){
-    return (
-          <div className="grid-item" key={key}>
-              <span className="category">{element.category}</span>
-              <span className="service">{element.service}</span>
-              <span className="price">${element.cost}</span>
-          </div>
-      );
-    });
 
     return(
       <div className="prices">
@@ -73,7 +63,23 @@ class Prices extends Component {
             <li data-category="facials" className={this.state.category === 'facials' ? 'active' : ''} onClick={this.handleOnCategoryClick}>Facials</li>
           </ul>
         <div className="grid">
-          {childElements}
+          <ReactCSSTransitionGroup
+          transitionName="example"
+          transitionAppear={true}
+          transitionAppearTimeout={500}
+          transitionEnter={true}
+          transitionEnterTimeout={500}
+          transitionLeave={false}>
+          {this.state.elements.map(function(element, key){
+            return (
+                <div className="grid-item" key={key}>
+                    <span className="category">{element.category}</span>
+                    <span className="service">{element.service}</span>
+                    <span className="price">${element.cost}</span>
+                </div>
+            );
+          })}
+        </ReactCSSTransitionGroup>
         </div>
       </div>
     );
