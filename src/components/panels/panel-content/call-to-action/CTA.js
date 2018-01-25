@@ -4,7 +4,7 @@ import './CTA.css';
 class CTA extends Component {
   render() {
     return(
-      <div className="call-to-action panel">
+      <div className="call-to-action">
         <div className="visual"></div>
         <div className="text">
           <div className="inner-text">

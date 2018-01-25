@@ -45,7 +45,6 @@
 
 .example-appear.example-appear-active {
   opacity: 1;
-  width: 100%;
   transition: opacity .5s ease-in;
 }
 
@@ -64,7 +63,7 @@
 
 .example-leave.example-leave-active {
   opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
 .grid .grid-item {
@@ -122,20 +121,4 @@
 }
 
 @media (max-width:400px) {
-  /* .grid-item {
-    width: inherit;
-    min-width: inherit;
-    max-width: inherit;
-    height: inherit;
-    max-height: inherit;
-    min-height: inherit;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .grid-item .service {
-    margin-bottom: 0;
-  } */
 }

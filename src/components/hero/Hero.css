@@ -17,7 +17,7 @@
 
 .hero-overlay {
   background-color: var(--overlay-color);
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -30,7 +30,7 @@
 .hero-image {
     background-image: url("./assets/hero-image.png");
     background-position: center;
-    height: 100vh;
+    height: 85vh;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

@@ -3,12 +3,26 @@ import ReactCSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import './Prices.css';
 
 var children = [
-    {category: 'threading', service: 'eyebrows', cost: 8},
     {category: 'threading', service: 'lip', cost: 4},
     {category: 'threading', service: 'chin', cost: 5},
     {category: 'threading', service: 'side', cost: 6},
+    {category: 'threading', service: 'eyebrows', cost: 8},
     {category: 'threading', service: 'cheek', cost: 10},
+    {category: 'threading', service: 'forehead', cost: 5},
+    {category: 'threading', service: 'half neck', cost: 5},
+    {category: 'threading', service: 'full face', cost: 25},
+    {category: 'threading', service: 'full neck', cost: 10},
+    {category: 'threading', service: 'eyebrows + lip', cost: 10},
     {category: 'waxing', service: 'under arms', cost: 10},
+    {category: 'waxing', service: 'stomach', cost: 20},
+    {category: 'waxing', service: 'buttocks', cost: 15},
+    {category: 'waxing', service: 'half legs', cost: 25},
+    {category: 'waxing', service: 'full leg', cost: 40},
+    {category: 'waxing', service: 'bikini side', cost: 10},
+    {category: 'waxing', service: 'brazilian bikini', cost: 30},
+    {category: 'waxing', service: 'full back', cost: 30},
+    {category: 'waxing', service: 'full body', cost: 120},
+    {category: 'waxing', service: 'full body + brazilian', cost: 150},
     {category: 'waxing', service: 'eyebrow + lips', cost: 10},
     {category: 'waxing', service: 'half arms', cost: 10},
     {category: 'waxing', service: 'full arms', cost: 30},
@@ -30,10 +44,13 @@ class Prices extends Component {
     }
   }
   componentDidMount() {
+    var sorted = children.sort(function(a,b) {
+      return a.cost - b.cost;
+    });
     if (this.state.category === 'all') {
-      this.setState({elements: children});
+      this.setState({elements: sorted});
     } else {
-      this.setState({elements: children});
+      this.setState({elements: sorted});
     }
   }
 
@@ -42,13 +59,19 @@ class Prices extends Component {
     if (categoryElement) {
       var category = categoryElement.getAttribute('data-category');
       if (category === 'all') {
-        this.setState({elements: children});
+        var sorted = children.sort(function(a,b) {
+          return a.cost - b.cost;
+        });
+        this.setState({elements: sorted});
       } else {
         var filtered = children.filter(function(item) {
           return item.category === category
         });
+        var sorted = filtered.sort(function(a,b) {
+          return a.cost - b.cost;
+        });
         this.setState({category: category});
-        this.setState({category: category, elements: filtered});
+        this.setState({category: category, elements: sorted});
       }
     }
   }

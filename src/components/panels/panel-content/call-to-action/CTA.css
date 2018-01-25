@@ -3,7 +3,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -31,13 +30,28 @@
   flex-direction: column;
   text-align: center;
   color: var(--bg-color);
-  background-color: var(--text-color);
+  background-color: var(--main-color);
 }
 
 .call-to-action .text h2 {
-  font-size: 3.75em;
+  font-size: 3.3em;
 }
 
 .call-to-action .text .inner-text {
-    padding: 5em;
+    padding: 3.5em;
+}
+
+@media (max-width: 768px) {
+  .call-to-action .visual {
+    display: none;
+    background-size: contain;
+  }
+
+  .call-to-action .text .inner-text {
+    padding: 3em 3.5em;
+  }
+
+  .call-to-action .text h2 {
+    font-size: 2.8em;
+  }
 }
