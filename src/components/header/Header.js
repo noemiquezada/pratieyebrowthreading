@@ -3,6 +3,7 @@ import './Header.css';
 import Logo from "../../assets/logo.svg";
 
 class Header extends Component {
+  
   render() {
     return (
       <div id="header" className="">
