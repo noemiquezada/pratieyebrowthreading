@@ -52,3 +52,9 @@
   margin: auto;
   width: 60%;
 }
+
+@media print, screen and (max-width: 40em) {
+  .hero-text h1 {
+    font-size: 3em;
+  }
+}

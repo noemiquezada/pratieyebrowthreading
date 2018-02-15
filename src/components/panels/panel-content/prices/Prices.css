@@ -115,8 +115,14 @@
   font-size: 2.5em;
 }
 
-@media (min-width:400px) and (max-width: 768px) {
-  .grid-item {
+@media (max-width: 768px) {
+  .filter > li {
+    margin: 0;
+    border: 2px var(--main-color) solid;
+    border-right: none;
+  }
+  .filter > li:last-child {
+    border-right: 2px var(--main-color) solid;
   }
 }
 
