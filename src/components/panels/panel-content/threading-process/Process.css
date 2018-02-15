@@ -11,6 +11,11 @@
   width: 24%;
 }
 
+.img-icon {
+  height: 120px;
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .flex-grid,
   .flex-grid-fourths {

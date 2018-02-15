@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900|Raleway:400,500,600,700,800|Quicksand:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 
 :root {
-  --main-color: #F69C6F;
+  /* --main-color: #F69C6F; */
+  /* --main-color: #E07F84; */
+  --main-color: #A64B53;
   /* --main-color: #860823; */
   /* --main-color: #9E0626; */
-  /* --text-color: #18170B; */
-  --text-color: #19120B;
-  --bg-color: #F6F6F6;
+  --text-color: #18170B;
+  /* --text-color: #19120B; */
+  /* --text-color: #574142; */
+  /* --bg-color: #F6F6F6; */
+  /* --bg-color: #FFF; */
+  --bg-color: #FCFCFC;
+  /* --bg-color: #FFE4E4; */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
 }

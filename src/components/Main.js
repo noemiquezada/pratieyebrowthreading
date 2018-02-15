@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Main.css';
 import Header from "./header/Header.js";
 import Hero from "./hero/Hero.js";
+import Footer from "./footer/Footer.js";
 import Panel from "./panels/Panel.js";
 
 import Services from "./panels/panel-content/services/Services.js";
@@ -21,6 +22,7 @@ class Main extends Component {
         <CallToAction />
         <Panel heading="Threading Process" subheading="A glance at our eyebrow threading process focused on ultimate care and results. " content={<Process/>}/>
         <Statement />
+        <Footer />
       </div>
     );
   }
