@@ -1,6 +1,6 @@
 .statement {
   background-image: url("./assets/statement-visual.png");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   width: 100%;
   height: 25em;
@@ -16,6 +16,7 @@
   margin-top: 5em;
   margin-bottom: 0;
   padding-top: 0;
+  height: 55vh;
 }
 
 .statement > * {
