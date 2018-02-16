@@ -73,3 +73,26 @@
     color: var(--main-color);
     font-size: 1.5em;
   }
+
+  @media (max-width: 768px) {
+    #footer .content {
+      text-align: left;
+    }
+
+    #footer .flex-grid-thirds .col {
+      margin: 0;
+      padding: 0;
+    }
+
+    #footer .flex-grid-thirds .col .content {
+      margin-top: 1em;
+    }
+
+    #footer .flex-grid-thirds .col:first-child{
+      margin-top: 20px;
+    }
+
+    #footer .follow-link {
+      justify-content: flex-start;
+    }
+  }

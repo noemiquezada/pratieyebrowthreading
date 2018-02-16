@@ -25,15 +25,19 @@
   justify-content: space-evenly;
 }
 
+#inner-header .right-menu {
+    justify-content: flex-end;
+}
 
 
-#-inner-header > span {
+#inner-header > span {
   line-height: 1.6;
   opacity: 1;
   transition: opacity 250ms ease-in-out 1.4s;
 }
 
 #inner-header span a {
+  /* display: none; */
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1em;
