@@ -16,10 +16,10 @@ class Header extends Component {
             <a id="logo" href="javascript:void(0)"><img src={Logo}/></a>
             <span className="right-menu">
               {/* <a href="javascript:void(0)" id="threading-process">Threading Process</a> */}
-              <span id="yelp-link"><a href="#" title="Yelp"><span><i className="fab fa-yelp"></i></span></a></span>
+              <span id="yelp-link"><a href="https://www.yelp.com/biz/prati-eyebrow-threading-fullerton-2" target="_blank" title="Yelp"><span><i className="fab fa-yelp"></i></span></a></span>
             </span>
             <span className="right-menu-mobile">
-              <span id="yelp-link"><a href="#" title="Yelp"><span><i className="fab fa-yelp"></i></span></a></span>
+              <span id="yelp-link"><a href="https://www.yelp.com/biz/prati-eyebrow-threading-fullerton-2" target="_blank" title="Yelp"><span><i className="fab fa-yelp"></i></span></a></span>
             </span>
           </div>
         </div>

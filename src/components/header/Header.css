@@ -48,11 +48,10 @@
 #inner-header span a:visited,
 #inner-header span a:focus {
   text-decoration: none;
-  color: var(--active-color);
 }
 
 #inner-header #yelp-link {
-  background-color: var(--text-color);
+  background-color: var(--active-color);
   width: 2.3em;
   height: 2.3em;
   display: flex;
@@ -63,10 +62,24 @@
   border-radius: 2em;
 }
 
+#inner-header #yelp-link:hover,
+#inner-header #yelp-link:visited,
+#inner-header #help-link:focus {
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+}
+
+#inner-header #yelp-link:hover > a,
+#inner-header #yelp-link:visited > a,
+#inner-header #yelp-link:focus > a {
+    color: var(--main-color);
+}
+
 #inner-header #yelp-link > a {
     color: var(--bg-color);
     font-size: 1.5em;
 }
+
 
 #inner-header .right-menu-mobile {
   display: none;

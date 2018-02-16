@@ -45,14 +45,14 @@ class Footer extends Component {
                   <div className="center-content">
                     <h4>Follow us On</h4>
                     <span className="follow-link">
-                      <span id="yelp-link"><a href="#" title="Yelp"><span><i className="fab fa-yelp"></i></span></a></span>
+                      <span id="yelp-link"><a href="https://www.yelp.com/biz/prati-eyebrow-threading-fullerton-2" target="_blank" title="Yelp"><span><i className="fab fa-yelp"></i></span></a></span>
                     </span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="copyright">
-              © 2017 Prati Eyebrow Threading. All rights reserved.
+              © 2018 Prati Eyebrow Threading. All rights reserved.
             </div>
           </div>
         </div>

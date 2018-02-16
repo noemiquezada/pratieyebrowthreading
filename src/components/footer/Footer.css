@@ -69,6 +69,19 @@
   border-radius: 2em;
 }
 
+#footer #yelp-link:hover,
+#footer #yelp-link:visited,
+#footer #yelp-link:focus {
+    background-color: var(--active-color);
+    border: 2px solid var(--bg-color);
+}
+
+#footer #yelp-link:hover > a,
+#footer #yelp-link:visited > a,
+#footer #yelp-link:focus > a {
+    color: var(--bg-color);
+}
+
 #footer #yelp-link > a {
     color: var(--main-color);
     font-size: 1.5em;
