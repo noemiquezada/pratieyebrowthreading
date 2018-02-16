@@ -62,7 +62,7 @@ class Prices extends Component {
         var sorted = children.sort(function(a,b) {
           return a.cost - b.cost;
         });
-        this.setState({elements: sorted});
+        this.setState({category: 'all', elements: sorted});
       } else {
         var filtered = children.filter(function(item) {
           return item.category === category
@@ -76,7 +76,6 @@ class Prices extends Component {
     }
   }
   render() {
-
     return(
       <div className="prices">
           <ul className="filter">
@@ -96,9 +95,16 @@ class Prices extends Component {
           {this.state.elements.map(function(element, key){
             return (
                 <div className="grid-item" key={key}>
+                    <p className="mobile-grid-item">
+                      <span className="category">{element.category}</span>
+                    <span className="inline">
+                      <span className="service">{element.service}</span>
+                      <span className="price">${element.cost}</span>
+                    </span>
+                    </p>
                     <span className="category">{element.category}</span>
                     <span className="service">{element.service}</span>
-                    <span className="price">${element.cost}</span>
+                  <span className="price">${element.cost}</span>
                 </div>
             );
           })}
