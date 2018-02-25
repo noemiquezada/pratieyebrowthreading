@@ -93,18 +93,23 @@ class Prices extends Component {
           transitionEnterTimeout={500}
           transitionLeave={false}>
           {this.state.elements.map(function(element, key){
+            if (element.service === "full face") {
+              var priceHtml = <span className="price">${element.cost}<span>&up</span></span>
+            } else {
+              var priceHtml = <span className="price">${element.cost}</span>;
+            }
             return (
                 <div className="grid-item" key={key}>
                     <p className="mobile-grid-item">
                       <span className="category">{element.category}</span>
                     <span className="inline">
                       <span className="service">{element.service}</span>
-                      <span className="price">${element.cost}</span>
+                      {priceHtml}
                     </span>
                     </p>
                     <span className="category">{element.category}</span>
                     <span className="service">{element.service}</span>
-                  <span className="price">${element.cost}</span>
+                    {priceHtml}
                 </div>
             );
           })}
