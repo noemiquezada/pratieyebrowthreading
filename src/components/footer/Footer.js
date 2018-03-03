@@ -17,8 +17,8 @@ class Footer extends Component {
                       <address>
                         1321 S. Harbor Blvd.<br/>
                         Fullerton CA, 92832<br/><br/>
-                        Call: <a href="tel:714-447-9074">(714)447-9074</> <br/>
-                        Email: <a href="mailto:pratikrp2002@yahoo.com">pratikrp2002@yahoo.com</>
+                        Call: <a href="tel:714-447-9074">(714)447-9074</a> <br/>
+                        Email: <a href="mailto:pratikrp2002@yahoo.com">pratikrp2002@yahoo.com</a>
                       </address>
                     </div>
                   </div>
