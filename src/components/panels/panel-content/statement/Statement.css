@@ -46,4 +46,8 @@
     align-items: center;
     height: 300px;
   }
+
+  .statement .text .inner-text{
+    margin-right: 0;
+  }
 }

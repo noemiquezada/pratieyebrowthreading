@@ -85,7 +85,7 @@
   display: none;
 }
 
-@media print, screen and (max-width: 40em) {
+@media print, screen and (max-width: 768px) {
   #inner-header .right-menu-mobile {
     display: flex;
     justify-content: flex-end;
