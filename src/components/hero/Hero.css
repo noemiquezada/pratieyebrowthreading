@@ -53,8 +53,16 @@
   width: 60%;
 }
 
-@media print, screen and (max-width: 40em) {
+@media print, screen and (max-width: 768px) {
   .hero-text h1 {
     font-size: 3em;
+  }
+
+  .hero-image {
+    height: 600px;
+  }
+
+  .hero-overlay {
+    height: 600px;
   }
 }

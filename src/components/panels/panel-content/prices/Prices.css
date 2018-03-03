@@ -128,7 +128,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media print, screen and (max-width: 768px) {
   .filter > li {
     margin: 0;
     border: 2px var(--main-color) solid;
@@ -139,7 +139,7 @@
   }
 }
 
-@media (max-width: 449px) {
+@media print, screen and (max-width: 449px) {
   .grid-item {
     width: 100%;
     min-width: inherit;

@@ -42,7 +42,7 @@
     padding: 0 3.5em;
 }
 
-@media (max-width: 768px) {
+@media print, screen and (max-width: 768px) {
   .call-to-action .visual {
     display: none;
     background-size: contain;
@@ -54,5 +54,9 @@
 
   .call-to-action .text h2 {
     font-size: 2.8em;
+  }
+
+  .call-to-action {
+    height: 300px;
   }
 }

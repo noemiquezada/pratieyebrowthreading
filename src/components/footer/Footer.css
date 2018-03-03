@@ -87,7 +87,11 @@
     font-size: 1.5em;
   }
 
-  @media (max-width: 768px) {
+  #footer a {
+    color: var(--bg-color);
+  }
+
+  @media print, screen and (max-width: 768px) {
     #footer .content {
       text-align: left;
     }
