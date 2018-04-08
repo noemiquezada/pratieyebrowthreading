@@ -6,7 +6,7 @@ class ServicePanel extends Component {
     return(
       <div className="content service-content">
           {/* <span className={"icon " + this.props.icon}></span> */}
-          <img className="img-icon" src={this.props.imgSource} />
+          <img className="img-icon" alt={this.props.heading} src={this.props.imgSource} />
           <h4>{this.props.heading}</h4>
           <p>{this.props.content}</p>
       </div>
